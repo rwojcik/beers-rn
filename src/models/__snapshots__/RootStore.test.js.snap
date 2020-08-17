@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates rootStore instance and matches snapshot 1`] = `
+Object {
+  "beers": Object {
+    "data": Array [],
+    "state": "initial",
+  },
+}
+`;
