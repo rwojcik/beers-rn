@@ -8,28 +8,28 @@ export const Beer = types
         tagline: types.string,
         first_brewed: types.string,
         description: types.string,
-        image_url: types.string,
+        image_url: types.optional(types.string, 'https://images.punkapi.com/v2/keg.png', [null, undefined]),
         abv: types.number,
-        ibu: types.number,
-        target_fg: types.number,
-        target_og: types.number,
-        ebc: types.number,
-        srm: types.number,
-        ph: types.number,
-        attenuation_level: types.number,
+        ibu: types.maybeNull(types.number),
+        target_fg: types.maybeNull(types.number),
+        target_og: types.maybeNull(types.number),
+        ebc: types.maybeNull(types.number),
+        srm: types.maybeNull(types.number),
+        ph: types.maybeNull(types.number),
+        attenuation_level: types.maybeNull(types.number),
         volume: Value,
         boil_volume: Value,
         method: types.model('Method', {
             mash_temp: types.array(
                 types.model('MashTemp', {
                     temp: Value,
-                    duration: types.number,
+                    duration: types.maybeNull(types.number),
                 })
             ),
             fermentation: types.model('Fermentation', {
-                temp: Value,
+                temp: types.maybeNull(Value),
             }),
-            twist: types.null,
+            twist: types.maybeNull(types.string),
         }),
         ingredients: types.model('Ingredients', {
             malt: types.array(
@@ -46,7 +46,7 @@ export const Beer = types
                     attribute: types.string,
                 })
             ),
-            yeast: types.string,
+            yeast: types.maybeNull(types.string),
         }),
         food_pairing: types.array(types.string),
         brewers_tips: types.string,

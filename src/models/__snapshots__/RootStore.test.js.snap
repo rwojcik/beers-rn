@@ -4,6 +4,8 @@ exports[`creates rootStore instance and matches snapshot 1`] = `
 Object {
   "beers": Object {
     "data": Array [],
+    "hasMore": true,
+    "page": 1,
     "state": "initial",
   },
 }
