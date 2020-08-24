@@ -10,8 +10,6 @@ export const rootStore = RootModel.create({
     beers: { state: 'initial' },
 });
 
-onSnapshot(rootStore, (snapshot) => console.log('Snapshot: ', snapshot));
-
 export type RootInstance = Instance<typeof RootModel>;
 export const RootStoreContext = createContext<null | RootInstance>(null);
 

@@ -36,10 +36,7 @@ export const BeerListView = observer(function BeerListViewObserver() {
                 keyExtractor={(item) => item.id.toString()}
                 refreshing={state === 'pending'}
                 getItemLayout={(_data, index) => ({ length: ITEM_HEIGHT, offset: ITEM_HEIGHT * index, index })}
-                onEndReached={(info) => {
-                    console.log('onEndReached', info);
-                    handleFetch();
-                }}
+                onEndReached={handleFetch}
                 onEndReachedThreshold={0.1}
                 numColumns={columns}
             />
