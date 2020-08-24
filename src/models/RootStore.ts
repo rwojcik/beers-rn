@@ -1,13 +1,16 @@
 import { types, Instance } from 'mobx-state-tree';
 import { useContext, createContext } from 'react';
 import { BeersStore } from './BeersStore';
+import { DetailBeerStore } from './DetailBeerStore';
 
 export const RootModel = types.model('RootModel', {
     beers: BeersStore,
+    detailBeer: DetailBeerStore,
 });
 
 export const rootStore = RootModel.create({
     beers: { state: 'initial' },
+    detailBeer: { state: 'initial' },
 });
 
 export type RootInstance = Instance<typeof RootModel>;

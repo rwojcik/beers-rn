@@ -8,5 +8,10 @@ Object {
     "page": 1,
     "state": "initial",
   },
+  "detailBeer": Object {
+    "data": null,
+    "similar": Array [],
+    "state": "initial",
+  },
 }
 `;

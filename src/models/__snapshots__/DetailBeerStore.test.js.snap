@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetches similar beer 1`] = `
+Object {
+  "data": Object {
+    "abv": 6,
+    "attenuation_level": 82.14,
+    "boil_volume": Object {
+      "unit": "liters",
+      "value": 25,
+    },
+    "brewers_tips": "While it may surprise you, this version of Punk IPA isn't dry hopped but still packs a punch! To make the best of the aroma hops make sure they are fully submerged and add them just before knock out for an intense hop hit.",
+    "contributed_by": "Sam Mason <samjbmason>",
+    "description": "Our flagship beer that kick started the craft beer revolution. This is James and Martin's original take on an American IPA, subverted with punchy New Zealand hops. Layered with new world hops to create an all-out riot of grapefruit, pineapple and lychee before a spiky, mouth-puckering bitter finish.",
+    "ebc": 17,
+    "first_brewed": "04/2007",
+    "food_pairing": Array [
+      "Spicy carne asada with a pico de gallo sauce",
+      "Shredded chicken tacos with a mango chilli lime salsa",
+      "Cheesecake with a passion fruit swirl sauce",
+    ],
+    "ibu": 60,
+    "id": 192,
+    "image_url": "https://images.punkapi.com/v2/192.png",
+    "ingredients": Object {
+      "hops": Array [
+        Object {
+          "add": "start",
+          "amount": Object {
+            "unit": "grams",
+            "value": 17.5,
+          },
+          "attribute": "bitter",
+          "name": "Ahtanum",
+        },
+        Object {
+          "add": "start",
+          "amount": Object {
+            "unit": "grams",
+            "value": 15,
+          },
+          "attribute": "bitter",
+          "name": "Chinook",
+        },
+      ],
+      "malt": Array [
+        Object {
+          "amount": Object {
+            "unit": "kilograms",
+            "value": 5.3,
+          },
+          "name": "Extra Pale",
+        },
+      ],
+      "yeast": "Wyeast 1056 - American Ale™",
+    },
+    "method": Object {
+      "fermentation": Object {
+        "temp": Object {
+          "unit": "celsius",
+          "value": 19,
+        },
+      },
+      "mash_temp": Array [
+        Object {
+          "duration": 75,
+          "temp": Object {
+            "unit": "celsius",
+            "value": 65,
+          },
+        },
+      ],
+      "twist": null,
+    },
+    "name": "Punk IPA 2007 - 2010",
+    "ph": 4.4,
+    "srm": 8.5,
+    "tagline": "Post Modern Classic. Spiky. Tropical. Hoppy.",
+    "target_fg": 1010,
+    "target_og": 1056,
+    "volume": Object {
+      "unit": "liters",
+      "value": 20,
+    },
+  },
+  "similar": Array [
+    Object {
+      "abv": 6,
+      "attenuation_level": 82.14,
+      "boil_volume": Object {
+        "unit": "liters",
+        "value": 25,
+      },
+      "brewers_tips": "While it may surprise you, this version of Punk IPA isn't dry hopped but still packs a punch! To make the best of the aroma hops make sure they are fully submerged and add them just before knock out for an intense hop hit.",
+      "contributed_by": "Sam Mason <samjbmason>",
+      "description": "Our flagship beer that kick started the craft beer revolution. This is James and Martin's original take on an American IPA, subverted with punchy New Zealand hops. Layered with new world hops to create an all-out riot of grapefruit, pineapple and lychee before a spiky, mouth-puckering bitter finish.",
+      "ebc": 17,
+      "first_brewed": "04/2007",
+      "food_pairing": Array [
+        "Spicy carne asada with a pico de gallo sauce",
+        "Shredded chicken tacos with a mango chilli lime salsa",
+        "Cheesecake with a passion fruit swirl sauce",
+      ],
+      "ibu": 60,
+      "id": 192,
+      "image_url": "https://images.punkapi.com/v2/192.png",
+      "ingredients": Object {
+        "hops": Array [
+          Object {
+            "add": "start",
+            "amount": Object {
+              "unit": "grams",
+              "value": 17.5,
+            },
+            "attribute": "bitter",
+            "name": "Ahtanum",
+          },
+          Object {
+            "add": "start",
+            "amount": Object {
+              "unit": "grams",
+              "value": 15,
+            },
+            "attribute": "bitter",
+            "name": "Chinook",
+          },
+        ],
+        "malt": Array [
+          Object {
+            "amount": Object {
+              "unit": "kilograms",
+              "value": 5.3,
+            },
+            "name": "Extra Pale",
+          },
+        ],
+        "yeast": "Wyeast 1056 - American Ale™",
+      },
+      "method": Object {
+        "fermentation": Object {
+          "temp": Object {
+            "unit": "celsius",
+            "value": 19,
+          },
+        },
+        "mash_temp": Array [
+          Object {
+            "duration": 75,
+            "temp": Object {
+              "unit": "celsius",
+              "value": 65,
+            },
+          },
+        ],
+        "twist": null,
+      },
+      "name": "Punk IPA 2007 - 2010",
+      "ph": 4.4,
+      "srm": 8.5,
+      "tagline": "Post Modern Classic. Spiky. Tropical. Hoppy.",
+      "target_fg": 1010,
+      "target_og": 1056,
+      "volume": Object {
+        "unit": "liters",
+        "value": 20,
+      },
+    },
+  ],
+  "state": "done",
+}
+`;

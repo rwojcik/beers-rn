@@ -1,7 +1,7 @@
 import React from 'react';
 import { Beer } from '../../models/Beer';
 import { Button, Card, Paragraph } from 'react-native-paper';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 export const ITEM_HEIGHT = 490;
 export const MAX_WIDTH = 430;
 
@@ -22,7 +22,7 @@ export const BeerListItem = React.memo(function BeerListItemMemo({
         <View style={styles.root}>
             <Card style={styles.container} elevation={5} onTouchEnd={handlePress}>
                 <Card.Title title={name} subtitle={tagline} />
-                <Card.Cover source={{ uri: image_url }} resizeMethod="scale" resizeMode="center" />
+                <Image style={styles.image} source={{ uri: image_url }} />
                 <Card.Content style={styles.content}>
                     <Paragraph numberOfLines={6}>{description}</Paragraph>
                 </Card.Content>
@@ -51,5 +51,10 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 1,
+    },
+    image: {
+        backgroundColor: 'lightgrey',
+        resizeMode: 'center',
+        height: 175,
     },
 });

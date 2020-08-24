@@ -20,7 +20,7 @@ type BeerListViewProps = {
 
 export const BeerListView = observer(function BeerListViewObserver({ navigation: { navigate } }: BeerListViewProps) {
     const {
-        beers: { count, data, fetch, state, hasMore },
+        beers: { count, data: data, fetch, state, hasMore },
     } = useRootStore();
 
     const { width } = useWindowDimensions();
@@ -58,7 +58,7 @@ export const BeerListView = observer(function BeerListViewObserver({ navigation:
                 refreshing={state === 'pending'}
                 getItemLayout={(_data, index) => ({ length: ITEM_HEIGHT, offset: ITEM_HEIGHT * index, index })}
                 onEndReached={handleFetch}
-                onEndReachedThreshold={0.1}
+                onEndReachedThreshold={0.5}
                 numColumns={columns}
             />
         </>
