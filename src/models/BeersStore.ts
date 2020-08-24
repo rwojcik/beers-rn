@@ -11,6 +11,7 @@ export const BeersStore = types
     })
     .views((self) => ({
         count: () => self.data.length,
+        byId: (id: number) => self.data.find((d) => d.id === id),
     }))
     .actions((self) => {
         const fetch = flow(function* () {

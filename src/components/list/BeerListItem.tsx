@@ -2,31 +2,32 @@ import React from 'react';
 import { Beer } from '../../models/Beer';
 import { Button, Card, Paragraph } from 'react-native-paper';
 import { StyleSheet, View } from 'react-native';
-
 export const ITEM_HEIGHT = 490;
 export const MAX_WIDTH = 430;
 
 type BeerListItemProps = {
     beer: typeof Beer.Type;
+    onOpenDetails: (id: number, name: string) => void;
 };
 
 export const BeerListItem = React.memo(function BeerListItemMemo({
     beer: { id, image_url, name, tagline, description },
+    onOpenDetails,
 }: BeerListItemProps) {
     function handlePress() {
-        console.log('press', id);
+        onOpenDetails(id, name);
     }
 
     return (
         <View style={styles.root}>
-            <Card style={styles.container} elevation={5} onPress={handlePress}>
+            <Card style={styles.container} elevation={5} onTouchEnd={handlePress}>
                 <Card.Title title={name} subtitle={tagline} />
-                <Card.Cover source={{ uri: image_url }} resizeMode="contain" />
+                <Card.Cover source={{ uri: image_url }} resizeMethod="scale" resizeMode="center" />
                 <Card.Content style={styles.content}>
                     <Paragraph numberOfLines={6}>{description}</Paragraph>
                 </Card.Content>
                 <Card.Actions style={styles.actions}>
-                    <Button onPress={handlePress}>Details</Button>
+                    <Button onTouchEnd={handlePress}>Details</Button>
                 </Card.Actions>
             </Card>
         </View>
